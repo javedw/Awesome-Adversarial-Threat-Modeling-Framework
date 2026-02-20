@@ -1,0 +1,263 @@
+- id: THR-001
+  name: Injection (SQL/Command/Template)
+  mitre:
+  - T1190
+  - T1059
+  - T1203
+  - T1505
+  - T1053.002
+  nist:
+    families:
+    - SI
+    controls:
+    - SI-10
+    - SI-2
+  stride:
+  - Tampering
+  - Elevation
+  pasta:
+  - Threat Analysis
+  australian_ism:
+  - Secure-Configuration
+  - Patch-Management
+  essential_eight:
+  - Patch Applications
+  - Application Whitelisting
+- id: THR-002
+  name: Broken Authentication & Session Management
+  mitre:
+  - T1078
+  - T1110
+  - T1531
+  - T1111
+  - T1053.002
+  nist:
+    families:
+    - IA
+    - AC
+    controls:
+    - AC-2
+    - AC-7
+    - IA-5
+  stride:
+  - Spoofing
+  pasta:
+  - Attack Modeling
+  australian_ism:
+  - Identity-and-Access-Management
+  - MFA
+  essential_eight:
+  - Multi-factor Authentication
+  - Restrict Admin Privileges
+- id: THR-003
+  name: Sensitive Data Exposure
+  mitre:
+  - T1041
+  - T1567
+  - T1005
+  - T1053.002
+  nist:
+    families:
+    - SC
+    - MP
+    controls:
+    - SC-13
+    - MP-2
+    - SC-8
+  stride:
+  - Information Disclosure
+  pasta:
+  - Threat Analysis
+  australian_ism:
+  - Data-Protection
+  - Encryption
+  essential_eight:
+  - Backups
+  - Patch Applications
+- id: THR-004
+  name: Security Misconfiguration
+  nist:
+    families:
+    - CM
+    - SI
+    controls:
+    - CM-2
+    - CM-6
+    - CM-7
+  stride:
+  - Tampering
+  - Repudiation
+  pasta:
+  - Design Analysis
+  australian_ism:
+  - Config-Management
+  - Secure-Deployment
+  essential_eight:
+  - Secure Configuration of Applications
+  - Patch Applications
+  mitre: []
+- id: THR-005
+  name: Supply Chain Compromise
+  mitre:
+  - T1195
+  - T1196
+  nist:
+    families:
+    - SA
+    - SR
+    controls:
+    - SA-12
+    - SR-3
+    - SA-9
+  stride:
+  - Tampering
+  pasta:
+  - Supply Chain Analysis
+  australian_ism:
+  - Supply-Chain-Risk-Management
+  essential_eight:
+  - Patch Applications
+  - Restrict Admin Privileges
+- id: THR-006
+  name: Cross-Site Scripting (XSS)
+  mitre:
+  - T1059
+  - T1055
+  - T1064
+  nist:
+    families:
+    - SI
+    - SC
+    controls:
+    - SI-10
+    - SC-7
+    - SC-8
+  stride:
+  - Tampering
+  - Information Disclosure
+  pasta:
+  - Attack Modeling
+  australian_ism:
+  - Secure-Coding
+  - Input-Validation
+  essential_eight:
+  - User Application Hardening
+  - Secure Configuration of Applications
+- id: THR-007
+  name: Cross-Site Request Forgery (CSRF)
+  nist:
+    families:
+    - AC
+    - SC
+    controls:
+    - AC-8
+    - SC-7
+  stride:
+  - Spoofing
+  - Tampering
+  pasta:
+  - Attack Modeling
+  australian_ism:
+  - Session-Management
+  essential_eight:
+  - User Application Hardening
+- id: THR-008
+  name: Server-Side Request Forgery (SSRF)
+  mitre:
+  - T1210
+  - T1189
+  - T1583.004
+  - T1584.004
+  nist:
+    families:
+    - SC
+    controls:
+    - SC-7
+    - SC-8
+  stride:
+  - Tampering
+  pasta:
+  - Attack Modeling
+  australian_ism:
+  - Endpoint-Protection
+  - Secure-Deployment
+  essential_eight:
+  - Application Whitelisting
+  - Patch Applications
+  - Restrict Admin Privileges
+- id: THR-009
+  name: Remote Code Execution (RCE)
+  mitre:
+  - T1203
+  - T1204
+  nist:
+    families:
+    - SI
+    controls:
+    - SI-3
+    - SI-10
+    - SI-2
+  stride:
+  - Tampering
+  - Execution
+  pasta:
+  - Attack Modeling
+- id: THR-010
+  name: Broken Access Control
+  mitre: []
+  nist:
+    families:
+    - AC
+    controls:
+    - AC-2
+    - AC-3
+    - AC-6
+  stride:
+  - Elevation of Privilege
+  pasta:
+  - Threat Analysis
+  australian_ism:
+  - Identity-and-Access-Management
+  essential_eight:
+  - Restrict Admin Privileges
+  - Multi-factor Authentication
+- id: THR-011
+  name: Unvalidated Redirects and Forwards
+  mitre: []
+  nist:
+    families:
+    - SC
+    controls:
+    - SC-7
+  stride:
+  - Information Disclosure
+  pasta:
+  - Design Analysis
+  australian_ism:
+  - Secure-Coding
+  essential_eight:
+  - User Application Hardening
+- id: THR-012
+  name: Denial of Service (Resource Exhaustion)
+  mitre:
+  - T1499
+  - T1498
+  - T1153
+  nist:
+    families:
+    - CP
+    - SI
+    controls:
+    - CP-2
+    - SI-17
+    - SC-5
+  stride:
+  - Denial
+  pasta:
+  - Attack Modeling
+  australian_ism:
+  - Availability-Management
+  - Network-Protection
+  essential_eight:
+  - Network Segmentation
+  - Patch Applications

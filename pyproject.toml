@@ -1,0 +1,10 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "awesome-aatmf"
+version = "1.0.0"
+description = "Awesome Adversarial Threat Modeling Framework (non-AI)"
+authors = [ { name="Security Team" } ]
+dependencies = ["networkx", "pandas", "ruamel.yaml"]

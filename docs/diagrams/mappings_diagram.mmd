@@ -1,0 +1,31 @@
+%%{init: {"theme":"neutral"}}%%
+graph LR
+  STRIDE[STRIDE]
+  PASTA[PASTA]
+  DREAD[DREAD]
+  STANDARDS[Standards Crosswalks]
+  MITRE[MITRE ATT&CK / ATLAS]
+  NIST[NIST SP 800-53]
+  OWASP[OWASP Top-10]
+
+  STRIDE -->|maps threats| STANDARDS
+  PASTA -->|phased analysis| STANDARDS
+  DREAD -->|risk scoring| STANDARDS
+
+  STANDARDS --> MITRE
+  STANDARDS --> NIST
+  STANDARDS --> OWASP
+
+  subgraph How it ties
+    STRIDE
+    PASTA
+    DREAD
+    STANDARDS
+  end
+
+  classDef standards fill:#f9f,stroke:#333,stroke-width:1px;
+  class STANDARDS,MITRE,NIST,OWASP standards
+
+  click MITRE "https://attack.mitre.org" "MITRE ATT&CK"
+  click NIST "https://csrc.nist.gov" "NIST"
+  click OWASP "https://owasp.org" "OWASP"

@@ -1,0 +1,32 @@
+---
+# Machine-readable threat crosswalks (starter). Teams should review and expand.
+- id: THR-001
+  name: Injection (SQL/Command/Template)
+  mappings:
+    owasp: [A1]
+    cwe: [CWE-89]
+    mitre: [T1190, T1059]
+    nist_families: [SI]
+
+- id: THR-002
+  name: Broken Authentication & Session Management
+  mappings:
+    owasp: [A2]
+    cwe: [CWE-287]
+    mitre: [T1078]
+    nist_families: [IA, AC]
+
+- id: THR-003
+  name: Sensitive Data Exposure
+  mappings:
+    owasp: [A3]
+    cwe: [CWE-200]
+    mitre: []
+    nist_families: [SC, MP]
+
+- id: THR-005
+  name: Supply Chain Compromise
+  mappings:
+    mitre: [T1195]
+    nist_families: [SA]
+    australian_ism: [Supply-Chain]

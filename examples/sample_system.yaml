@@ -1,0 +1,10 @@
+assets:
+  - id: web-01
+    type: webserver
+  - id: db-01
+    type: database
+flows:
+  - src: web-01
+    dst: db-01
+    protocol: https
+    sensitivity: high

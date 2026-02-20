@@ -1,0 +1,17 @@
+---
+- id: THR-TEST-001
+  name: Test Injection
+  description: Test entry for injection mapping
+  severity: medium
+  mappings:
+    mitre: [T1190]
+    nist_controls: [SI-10]
+    owasp: [A1]
+
+- id: THR-TEST-002
+  name: Test Sensitive Data
+  description: Test entry for sensitive data mapping
+  severity: high
+  mappings:
+    nist_controls: [SC-13, MP-2]
+    owasp: [A3]
